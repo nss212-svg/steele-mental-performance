@@ -41,7 +41,15 @@ h1, h2, h3 { text-wrap: balance; }
 .brand { display: flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; }
 .tmark { width: 36px; height: 36px; border-radius: 9px; background: #151515; color: #F5F5F2; display: grid; place-items: center; font-family: var(--display); font-weight: 800; font-size: 24px; letter-spacing: -.04em; line-height: 1; position: relative; padding-right: 6px; }
 .tmark::after { content: ""; position: absolute; width: 8px; height: 8px; border-radius: 50%; background: var(--tempo-dot); right: 7px; bottom: 10px; }
-.brand .tempo { font-size: 22px; color: var(--band-ink); }
+.smp-mark { width: 40px; height: 40px; flex: none; }
+.smp-word { display: grid; line-height: 1; gap: 3px; }
+.smp-word .w1 { font-family: var(--display); font-weight: 800; font-size: 20px; letter-spacing: .02em; text-transform: uppercase; color: var(--band-ink); }
+.smp-word .w2 { font-size: 10px; font-weight: 700; letter-spacing: .19em; text-transform: uppercase; color: var(--gold); }
+.band-right { display: flex; align-items: center; gap: 14px; }
+.powered { display: flex; align-items: baseline; gap: 5px; color: var(--band-muted); font-size: 12px; padding-left: 14px; border-left: 1px solid var(--band-3); white-space: nowrap; }
+.powered .tempo { font-size: 16px; color: var(--band-ink); }
+@media (max-width: 480px) { .powered { padding-left: 0; border-left: 0; } .powered .lbl { display: none; } .nav a.cta { display: none; } }
+
 .oldmark { width: 36px; height: 36px; border-radius: 8px; background: var(--gold); color: var(--gold-ink); display: grid; place-items: center; font-family: var(--display); font-weight: 800; font-size: 12px; letter-spacing: .02em; }
 .wordmark { font-family: var(--display); font-weight: 800; font-size: 15px; letter-spacing: .06em; text-transform: uppercase; }
 @media (max-width: 420px) { .wordmark { font-size: 13px; } }
@@ -162,16 +170,23 @@ footer .tempo { font-size: 15px; color: var(--band-ink); }
 
 <header class="band">
   <div class="wrap band-in">
-    <a class="brand" href="#top" aria-label="tempo, back to top">
-      <span class="tmark" aria-hidden="true">t</span>
-      <span class="tempo">tempo</span>
+    <a class="brand" href="#top" aria-label="Steele Mental Performance, back to top">
+      <svg class="smp-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="20" fill="none" stroke="var(--band-3)" stroke-width="4"/>
+        <circle cx="24" cy="24" r="20" fill="none" stroke="var(--gold)" stroke-width="4" stroke-linecap="round" stroke-dasharray="100 126" transform="rotate(-90 24 24)"/>
+        <text x="24" y="32.5" text-anchor="middle" font-family="Bricolage Grotesque, Arial, sans-serif" font-weight="800" font-size="24" fill="var(--band-ink)">S</text>
+      </svg>
+      <span class="smp-word"><span class="w1">Steele</span><span class="w2">Mental Performance</span></span>
     </a>
+    <div class="band-right">
     <nav class="nav" aria-label="Sections">
       <a href="#skills">Skills</a>
       <a href="#details">Details</a>
       <a href="#coach">Coach</a>
       <a class="cta" href="#contact">Get started</a>
     </nav>
+    <span class="powered"><span class="lbl">Powered by</span> <span class="tempo">tempo</span></span>
+    </div>
   </div>
 </header>
 
@@ -179,7 +194,7 @@ footer .tempo { font-size: 15px; color: var(--band-ink); }
   <div class="hero">
     <div class="wrap hero-in">
       <div>
-        <div class="program">Steele Mental Performance &middot; Coaching for athletes</div>
+        <div class="program">Mental performance coaching for athletes</div>
         <h1>Train the mind. <span>Elevate your game.</span></h1>
         <p class="lede">Build the confidence, composure, and focus to perform at your best, in your sport and beyond.</p>
         <div class="btns">
@@ -311,7 +326,6 @@ footer .tempo { font-size: 15px; color: var(--band-ink); }
 <footer>
   <div class="wrap">
     <span>Steele Mental Performance &middot; Arlington Heights, IL</span>
-    <span>Powered by <span class="tempo">tempo</span></span>
   </div>
 </footer>
 

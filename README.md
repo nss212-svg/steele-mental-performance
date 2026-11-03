@@ -17,7 +17,7 @@ Every push to `main` redeploys automatically.
 
 ```
 public/index.html    the whole site (styles and script inline)
-public/favicon.png   tempo. browser tab icon
+public/favicon.png   Steele Mental Performance tab icon
 ```
 
 Colors are at the top of the `<style>` block in `index.html` (navy, steel blue, gold from the program flyer).
