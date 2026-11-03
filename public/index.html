@@ -139,7 +139,7 @@ h2 em { font-style: normal; color: var(--accent); }
 
 /* Coach */
 .coach { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 32px; align-items: start; }
-.mono { width: 132px; height: 132px; border-radius: 50%; background: var(--band); color: var(--band-ink); display: grid; place-items: center; font-family: var(--display); font-weight: 800; font-size: 46px; letter-spacing: -.04em; border: 4px solid var(--gold); }
+.mono { width: 132px; height: 132px; border-radius: 50%; background: var(--band); color: var(--band-ink); display: grid; place-items: center; font-family: var(--display); font-weight: 800; font-size: 46px; letter-spacing: -.04em; border: 4px solid var(--gold); object-fit: cover; }
 .coach h3 { font-family: var(--display); font-weight: 800; font-size: 30px; letter-spacing: -.03em; margin: 4px 0 2px; }
 .coach .role { color: var(--accent); font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 14px; }
 .coach p { margin: 0; font-size: 17px; max-width: 62ch; }
@@ -293,7 +293,7 @@ footer .tempo { font-size: 15px; color: var(--band-ink); }
         <div class="eyebrow">Meet your coach</div>
       </div>
       <div class="coach">
-        <div class="mono" aria-hidden="true">MS</div>
+        <img class="mono" src="mike.jpg" alt="Mike Steele" width="132" height="132">
         <div>
           <h3>Mike Steele, MSW</h3>
           <div class="role">Mental Performance Coach</div>
