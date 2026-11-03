@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#12304A">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" type="image/png"><link rel="apple-touch-icon" href="favicon.png">
 <title>Steele Mental Performance</title>
 <meta name="description" content="Mental performance coaching for athletes in every sport. Powered by tempo.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,10 @@ h1, h2, h3 { text-wrap: balance; }
 .band { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--band); color: var(--band-ink); border-bottom: 3px solid var(--gold); }
 .band-in { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 10px; }
 .brand { display: flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; }
-.mark { width: 36px; height: 36px; border-radius: 8px; background: var(--gold); color: var(--gold-ink); display: grid; place-items: center; font-family: var(--display); font-weight: 800; font-size: 12px; letter-spacing: .02em; }
+.tmark { width: 36px; height: 36px; border-radius: 9px; background: #151515; color: #F5F5F2; display: grid; place-items: center; font-family: var(--display); font-weight: 800; font-size: 24px; letter-spacing: -.04em; line-height: 1; position: relative; padding-right: 6px; }
+.tmark::after { content: ""; position: absolute; width: 8px; height: 8px; border-radius: 50%; background: var(--tempo-dot); right: 7px; bottom: 10px; }
+.brand .tempo { font-size: 22px; color: var(--band-ink); }
+.oldmark { width: 36px; height: 36px; border-radius: 8px; background: var(--gold); color: var(--gold-ink); display: grid; place-items: center; font-family: var(--display); font-weight: 800; font-size: 12px; letter-spacing: .02em; }
 .wordmark { font-family: var(--display); font-weight: 800; font-size: 15px; letter-spacing: .06em; text-transform: uppercase; }
 @media (max-width: 420px) { .wordmark { font-size: 13px; } }
 .nav { display: flex; gap: 2px; }
@@ -159,9 +162,9 @@ footer .tempo { font-size: 15px; color: var(--band-ink); }
 
 <header class="band">
   <div class="wrap band-in">
-    <a class="brand" href="#top" aria-label="Back to top">
-      <span class="mark" aria-hidden="true">SMP</span>
-      <span class="wordmark">Steele Mental Performance</span>
+    <a class="brand" href="#top" aria-label="tempo, back to top">
+      <span class="tmark" aria-hidden="true">t</span>
+      <span class="tempo">tempo</span>
     </a>
     <nav class="nav" aria-label="Sections">
       <a href="#skills">Skills</a>
@@ -176,7 +179,7 @@ footer .tempo { font-size: 15px; color: var(--band-ink); }
   <div class="hero">
     <div class="wrap hero-in">
       <div>
-        <div class="program">Mental performance coaching for athletes</div>
+        <div class="program">Steele Mental Performance &middot; Coaching for athletes</div>
         <h1>Train the mind. <span>Elevate your game.</span></h1>
         <p class="lede">Build the confidence, composure, and focus to perform at your best, in your sport and beyond.</p>
         <div class="btns">
