@@ -136,6 +136,8 @@ h2 { font-family: var(--display); font-weight: 700; font-size: clamp(28px, 4vw, 
 .closing { margin: 30px 0 0; font-family: var(--display); font-weight: 600; font-size: 20px; color: #FFFFFF; max-width: 42ch; }
 
 footer { color: var(--muted); font-size: 13px; }
+.foot-tempo { display: flex; align-items: baseline; gap: 5px; }
+.foot-tempo .tempo { font-size: 16px; color: var(--ink); }
 footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-block: 8px 28px; }
 
 @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
@@ -252,7 +254,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
 </main>
 
 <footer>
-  <div class="wrap"><span>Steele Mental Performance &middot; Arlington Heights, IL</span><span>&copy; 2026</span></div>
+  <div class="wrap"><span>Steele Mental Performance &middot; Arlington Heights, IL</span><span class="foot-tempo">Powered by <span class="tempo">tempo</span></span></div>
 </footer>
 
 <script>
