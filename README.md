@@ -20,4 +20,4 @@ public/index.html    the whole site (styles and script inline)
 public/favicon.png   Steele Mental Performance tab icon
 ```
 
-Colors are at the top of the `<style>` block in `index.html` (navy, steel blue, gold from the program flyer).
+Colors are at the top of the `<style>` block in `index.html` (black ink, electric blue accent on a cool gray ground).
